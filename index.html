@@ -17,7 +17,7 @@
         background: linear-gradient(0.5turn, #162a72, #405685, #b1bcdb);
         background-size: cover;
         color: #e3e4e5;
-        height: 120vh;
+        height: 150vh;
       }
 
       h1 {
@@ -91,7 +91,34 @@
       }
 
       .modal {
-        top: 25%;
+        top: 5%;
+      }
+
+      .fa-x {
+        font-size: 1.75rem;
+      }
+
+      .red-font {
+        color: #cc231e;
+      }
+
+      .green-font {
+        color: #0f8a5f;
+      }
+
+      .modal-title {
+        font-size: 2rem;
+      }
+
+      .modal-body {
+        color: #235e6f;
+        font-size: 1.5rem;
+      }
+
+      .musical-img {
+        height: 400px;
+        width: 350px;
+        margin: auto;
       }
     </style>
   </head>
@@ -109,11 +136,12 @@
       <div class="snowflake">❄</div>
     </div>
     <div class="banner text-center mt-5">
-      <h1>Welcome to Francis' Christmas Quiz!</h1>
+      <h1>Finish The Lyrics!</h1>
     </div>
     <div id="intro" class="mt-5 text-center">
       <img class="mb-5" src="https://clipart-library.com/images_k/snowman-clipart-transparent-background/snowman-clipart-transparent-background-2.png" width="250" height="150" />
-      <h2>Press start whenever you are ready!</h2>
+      <h2>Welcome to the Winter Musical Game Show</h2>
+      <h2>Play for a chance to win!</h2>
       <button id="start" class="mt-3 btn start-btn">START</button>
     </div>
     <div id="carousel-form" class="form d-none">
@@ -123,7 +151,11 @@
             <div id="carousel" class="carousel slide mb-5" data-bs-ride="false" data-bs-interval="false">
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <h2 class="question">What is the hit song in "Shucked 🌽" sang by Beau?</h2>
+                  <h2 class="question">
+                    I was raised on the Bible <br />
+                    And a hammer and a nail <br />
+                    When I wasn't raisin' corn 🌽
+                  </h2>
                   <div class="radio-wrapper">
                     <div class="container">
                       <div class="row">
@@ -132,7 +164,7 @@
                             <input id="somebody-will" class="card-input" type="radio" value="somebody-will" name="shucked" data-value="correct" />
                             <span id="somebody-willspan" class="card">
                               <span class="card-body d-flex align-items-center justify-content-center">
-                                <span>Somebody Will</span>
+                                <span>I was raisin hell</span>
                               </span>
                             </span>
                           </label>
@@ -142,7 +174,7 @@
                             <input id="love-me" class="card-input" type="radio" value="love-me" name="shucked" />
                             <span id="love-mespan" class="card">
                               <span class="card-body d-flex align-items-center justify-content-center">
-                                <span>Will Somebody Love Me?</span>
+                                <span>I was settin sail</span>
                               </span>
                             </span>
                           </label>
@@ -152,7 +184,92 @@
                             <input id="somebody-wont" class="card-input" type="radio" value="somebody-wont" name="shucked" />
                             <span id="somebody-wontspan" class="card">
                               <span class="card-body d-flex align-items-center justify-content-center">
-                                <span>Somebody Won't</span>
+                                <span>I was tellin tales</span>
+                              </span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item" id="lastItem">
+                  <h2 class="question">
+                    Betcha they're _____ <br />
+                    Betcha they're _____ <br />
+                    Bet they collect things like 🚬📥 & 🎨.
+                  </h2>
+                  <div class="radio-wrapper">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12 col-sm-4">
+                          <label for="smoking">
+                            <input id="smoking" class="card-input" type="radio" value="Smoking" name="second" />
+                            <span id="smokingspan" class="card">
+                              <span class="card-body d-flex align-items-center justify-content-center">
+                                <span>Smoking, Painting</span>
+                              </span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                          <label for="young">
+                            <input id="young" class="card-input" type="radio" value="Young" name="second" data-value="correct" />
+                            <span id="youngspan" class="card">
+                              <span class="card-body d-flex align-items-center justify-content-center">
+                                <span>Young, Smart</span>
+                              </span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                          <label for="cool">
+                            <input id="cool" class="card-input" type="radio" value="cool" name="second" />
+                            <span id="coolspan" class="card">
+                              <span class="card-body d-flex align-items-center justify-content-center">
+                                <span>Cool, Artsy</span>
+                              </span>
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <h2 class="question">
+                    Five hundred, twenty five thousand, six hundred minutes <br />
+                    Five hundred, twenty five thousand _________________
+                  </h2>
+                  <div class="radio-wrapper">
+                    <div class="container">
+                      <div class="row">
+                        <div class="col-12 col-sm-4">
+                          <label for="minutes">
+                            <input id="minutes" class="card-input" type="radio" value="Minutes" name="third" />
+                            <span id="minutespsan" class="card">
+                              <span class="card-body d-flex align-items-center justify-content-center">
+                                <span>Six Hundred Minutes</span>
+                              </span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                          <label for="journey">
+                            <input id="journey" class="card-input" type="radio" value="Journey" name="third" />
+                            <span id="journeyspan" class="card">
+                              <span class="card-body d-flex align-items-center justify-content-center">
+                                <span>Journeys to go</span>
+                              </span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="col-12 col-sm-4">
+                          <label for="moments">
+                            <input id="moments" class="card-input" type="radio" value="moments" name="third" data-value="correct" />
+                            <span id="momentsspan" class="card">
+                              <span class="card-body d-flex align-items-center justify-content-center">
+                                <span>Moments so dear</span>
                               </span>
                             </span>
                           </label>
@@ -163,7 +280,7 @@
                 </div>
                 <!-- BEGIN LAST QUESTION -->
                 <div class="carousel-item" id="lastItem">
-                  <h2 class="question">Test Header</h2>
+                  <h2 class="question">May you always...</h2>
                   <div class="radio-wrapper">
                     <div class="container">
                       <div class="row">
@@ -172,7 +289,7 @@
                             <input id="card3" class="card-input" type="radio" value="card3" name="finalQuestion" />
                             <span id="card3span" class="card">
                               <span class="card-body d-flex align-items-center justify-content-center">
-                                <span>Question</span>
+                                <span>...walk in sunshine</span>
                               </span>
                             </span>
                           </label>
@@ -182,7 +299,7 @@
                             <input id="card4" class="card-input" type="radio" value="card4" name="finalQuestion" />
                             <span id="card4span" class="card">
                               <span class="card-body d-flex align-items-center justify-content-center">
-                                <span>Question</span>
+                                <span>...know you have a hand to hold</span>
                               </span>
                             </span>
                           </label>
@@ -192,7 +309,7 @@
                             <input id="card5" class="card-input" type="radio" value="card5" name="finalQuestion" data-value="correct" />
                             <span id="card5span" class="card">
                               <span class="card-body d-flex align-items-center justify-content-center">
-                                <span>Question</span>
+                                <span>...be satisfied</span>
                               </span>
                             </span>
                           </label>
@@ -231,19 +348,25 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel"><span class="green-font">Merry&nbsp;</span><span class="red-font">Christmas&nbsp;</span><span class="green-font">Julia!</span></h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <div class="modal-body">...</div>
+          <div id="modal-body-first" class="modal-body">I love you ❤️. 2023 has been a HUGE year for us. We moved in together, we got engaged, & we chose a wedding venue. I am so excited to continue this life with you and to see what our future holds! With all that being said, I hope you are free on Saturday, March 2nd, 2024. We have tickets to see...</div>
+          <div id="modal-body-next" class="d-none modal-body text-center">
+            <p>HAMILTON THE MUSICAL</p>
+            <img class="musical-img" src="/musical.png" />
+          </div>
+
           <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button id="continue-btn" type="button" class="btn"><i class="fa-solid fa-arrow-right"></i></button>
+            <button id="prev-btn" type="button" class="btn d-none"><i class="fa-solid fa-arrow-left"></i></button>
           </div>
         </div>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c18e4a61e7.js" crossorigin="anonymous"></script>
     <script src="js.js"></script>
   </body>
 </html>
