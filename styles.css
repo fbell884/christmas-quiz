@@ -1,7 +1,3 @@
-/* input:checked + .card {
-  border: 4px solid blue;
-} */
-
 /* Snowfall */
 
 .intro,
@@ -139,4 +135,113 @@
 .demo a {
   font-family: "Raleway", sans-serif;
   color: #000;
+}
+
+body {
+  font-family: "Oswald";
+  background: linear-gradient(0.5turn, #162a72, #405685, #b1bcdb);
+  background-size: cover;
+  color: #e3e4e5;
+  height: 150vh;
+}
+
+h1 {
+  font-family: "Style Script";
+  font-size: 3.5rem;
+}
+
+/* Styles to add */
+.card-input {
+  display: none;
+}
+
+.radio-wrapper {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.question {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.subhead {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+
+.card {
+  background-color: #e3e4e5;
+  color: #162a72;
+  width: 200px;
+  height: 200px;
+}
+
+.start-btn {
+  width: 25%;
+}
+
+@media (max-width: 576px) {
+  .card {
+    margin-bottom: 1rem;
+  }
+
+  .start-btn {
+    width: 50%;
+  }
+}
+
+.card-body span {
+  font-size: 1.5rem;
+}
+
+.incorrect {
+  border: 3px solid red;
+}
+
+.correct {
+  border: 5px solid #0f8a5f;
+}
+
+.btn {
+  background-color: goldenrod;
+  height: 50px;
+}
+
+.submit-btn {
+  width: 200px;
+  height: 50px;
+}
+
+.modal {
+  top: 5%;
+}
+
+.fa-x {
+  font-size: 1.75rem;
+}
+
+.red-font {
+  color: #cc231e;
+}
+
+.green-font {
+  color: #0f8a5f;
+}
+
+.modal-title {
+  font-size: 2rem;
+}
+
+.modal-body {
+  color: #235e6f;
+  font-size: 1.5rem;
+}
+
+.musical-img {
+  height: 400px;
+  width: 350px;
+  margin: auto;
 }

@@ -5,6 +5,7 @@ const continueBtn = document.getElementById("continue-btn");
 const prevBtn = document.getElementById("prev-btn");
 const myCarousel = document.querySelector("#carousel");
 const carousel = new bootstrap.Carousel(myCarousel);
+const banner = document.getElementById("banner");
 
 startBtn.addEventListener("click", () => {
   document.getElementById("carousel-form").classList.remove("d-none");
@@ -19,9 +20,11 @@ document.querySelectorAll("input[type=radio]").forEach(radio => {
       if (radio.name !== "finalQuestion") {
         setTimeout(() => {
           nextBtn.click();
+          banner.scrollIntoView();
         }, "300");
       } else {
         submitBtn.classList.remove("d-none");
+        submitBtm.scrollIntoView();
       }
     } else {
       radio.nextElementSibling.classList.add("incorrect");
@@ -60,4 +63,5 @@ myModalEl.addEventListener("hidden.bs.modal", function (event) {
   document.getElementById("modal-body-next").classList.add("d-none");
   continueBtn.classList.remove("d-none");
   prevBtn.classList.add("d-none");
+  banner.scrollIntoView();
 });
