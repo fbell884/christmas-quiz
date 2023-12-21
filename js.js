@@ -24,7 +24,7 @@ document.querySelectorAll("input[type=radio]").forEach(radio => {
         }, "300");
       } else {
         submitBtn.classList.remove("d-none");
-        submitBtm.scrollIntoView();
+        submitBtn.scrollIntoView();
       }
     } else {
       radio.nextElementSibling.classList.add("incorrect");
